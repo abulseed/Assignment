@@ -4,6 +4,8 @@ Technical Stack:
 - sbt
 - intellij IDEA
 - akka http
+- SourceTree
+- GitHub
 
 Optional Questions:
 ===================
