@@ -24,8 +24,8 @@ object WebServer extends HttpApp with JsonSupport {
   override def routes: Route =
     path("api" / "restaurant") {
       get {
-        parameter('closed.as[Boolean]) {
-          closed => complete(StatusCodes.Accepted, RestaurantRepository.list(closed))
+        parameter('closed.as[Boolean]) { closed =>
+          complete(StatusCodes.Accepted, RestaurantRepository.list(closed))
         }
       } ~ get {
         val ls = RestaurantRepository.listAll()
