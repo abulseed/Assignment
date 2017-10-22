@@ -1,10 +1,6 @@
 package repository
 
-import java.util.UUID
-
 import server.{RestaurantData, RestaurantInfo}
-
-import scala.collection.mutable
 
 /**
   * Created by abulseed on 10/22/2017.
